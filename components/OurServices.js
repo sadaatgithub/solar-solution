@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "./Container";
 import Image from "next/image";
-import aboutImage from "../public/solar-hero.jpg";
+import aboutImage from "../public/solar-installation.jpg";
 
 const OurServices = () => {
   return (
@@ -16,9 +16,9 @@ const OurServices = () => {
           </p>
         </div>
       </div>
-      <div className="flex gap-8 w-full flex-col md:flex-row">
-        <div className="md:w-1/2 flex flex-col border  overflow-hidden shadow-xl rounded-md">
-          <div className="">
+      <div className="flex gap-8 w-full flex-col lg:flex-row">
+        <div className="lg:w-1/2 flex flex-col border md:w-/3 overflow-hidden shadow-xl rounded-md">
+          <div className="max-h-96 overflow-hidden">
             <Image
               src={aboutImage}
               width={640}
@@ -27,22 +27,23 @@ const OurServices = () => {
               className="w-full h-full object-cover "
             />
           </div>
-          <div className="p-12">
-            <h3 className="font-bold pb-6 text-[40px] text-sky-800/90">Service One</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique.
+          <div className="p-6">
+            <h3 className="font-bold pb-6 text-[40px] text-sky-800">Solar Work</h3>
+            <p className="text-gray-500">
+            Our solar installation service provides expert design and installation of custom solar energy solutions for residential and commercial clients. 
+            Our licensed professionals ensure a seamless installation process and long-term performance optimization.
             </p>
             <div className="pt-8">
               <button>Know More</button>
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:w-1/2 gap-8 ">
-          <div className="flex gap-8 lg:flex-row flex-col">
+        <div className="flex flex-col lg:w-1/2 gap-8 ">
+          <div className="flex gap-8  flex-col sm:flex-row lg:flex-col xl:flex-row ">
+
           {/* service two */}
 
-            <div className="border shadow-xl rounded-md p-6">
+            <div className="border shadow-xl rounded-md p-6 w-full xl:w-1/2 ">
               <svg
                 width="36"
                 height="40"
@@ -59,15 +60,15 @@ const OurServices = () => {
                 />
               </svg>
 
-              <h5 class="pb-2 text-2xl font-bold text-slate-700">Service Two</h5>
-              <p className="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h5 class="pb-2 text-2xl font-bold text-sky-800">HT-LT panels</h5>
+              <p className="text-gray-500">We offers installation and maintenance services for both LT and HT solar systems</p>
               <div className="pt-6">
                 <button className="">Read More</button>
               </div>
             </div>
 
           {/* service three */}
-            <div className="shadow-xl border rounded-md p-6">
+            <div className="shadow-xl border rounded-md p-6 w-full xl:w-1/2">
               <svg
                 width="36"
                 height="40"
@@ -84,17 +85,17 @@ const OurServices = () => {
                 />
               </svg>
 
-              <h5 class="pb-2 text-2xl font-bold text-slate-700 ">Service Three</h5>
-              <p className="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h5 class="pb-2 text-2xl font-bold text-sky-800 ">Consultant</h5>
+              <p className="text-gray-500">We provide consulting and design services to assist customers in planning and implementing customized solar energy solutions.</p>
               <div className="pt-6">
                 <button className="">Read More</button>
               </div>
             </div>
           </div>
 
-        <div className="flex h-full border  rounded-md shadow-xl">
-            <div className="flex flex-col justify-center w-1/2 p-6 ">
-            <h5 class="pb-2 text-2xl font-bold text-slate-700">Service Four</h5>
+        <div className="flex flex-col-reverse h-full border sm:flex-row   rounded-md shadow-xl">
+            <div className="flex flex-col justify-center w-full sm:w-1/2 p-6  ">
+            <h5 class="pb-2 text-2xl font-bold text-sky-800">Solar Equipments Supply</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div className="pt-6">
                 <button>Read More</button>
@@ -102,7 +103,7 @@ const OurServices = () => {
 
 
             </div>
-            <div className="w-1/2">
+            <div className="w-full sm:w-1/2">
             <Image
               src={aboutImage}
               width={640}

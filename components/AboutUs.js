@@ -4,13 +4,13 @@ import Image from 'next/image'
 import aboutImage from "../public/solar-hero.jpg"
 const AboutUs = () => {
   return (
-   <Container className="flex gap-20 w-full items-center">
+   <Container className="flex gap-20 w-full items-center min-h-screen">
     <div className="flex flex-col gap-6 lg:w-1/2 z-10">
         <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-4">
                 <p className="text-orange-500">About</p>
                 <div className="flex flex-col gap-6">
-                    <h2 className="text-5xl font-bold text-gray-700">We're passionate about bringing clean, affordable solar energy to our community</h2>
+                    <h2 className="text-5xl font-bold text-sky-700">We're passionate about bringing clean, affordable solar energy to our community</h2>
                     <p className="text-lg text-gray-500">Our mission is to make solar energy accessible to everyone. We believe that solar is not only good for the environment, but also for our customers' wallets. By helping homeowners and businesses switch to solar, we're making a positive impact on both the planet and their bottom line.</p>
                 </div>
                 

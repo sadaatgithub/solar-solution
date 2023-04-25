@@ -1,5 +1,8 @@
 import React from "react";
 import Container from "./Container";
+import aboutImage from "../public/solarimg.jpg";
+import Image from "next/image";
+
 
 const benefits = [
     {id:1,title:"Renewable",desc:"Solar energy is a renewable source of energy, meaning it won't deplete like traditional fossil fuels."},
@@ -11,21 +14,30 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <Container className="flex gap-20 w-full items-start">
-      <div className="flex flex-col gap-8 w-1/2">
-        <div className="flex flex-col gap-y-4">
+    <Container className="flex gap-20 w-full md:flex-row flex-col min-h-screen">
+      <div className="flex flex-col gap-8 md:w-1/2">
+      <div className="flex flex-col gap-y-4">
           <p className="font-semibold text-orange-500">Benefits</p>
           <h2 className="font-bold text-5xl text-gray-700">Why Go For Solar</h2>
         </div>
-        <div className="">
-          <button className="px-6 py-3 border">Read More</button>
-        </div>
+        <div className="h-3/4">
+            <Image
+              src={aboutImage}
+              width={640}
+              height={480}
+              alt="our team"
+              className="w-full h-full object-cover shadow-2xl shadow-sky-800/20"
+            />
+          </div>
+       
       </div>
 
       {/* benefits points */}
-      <div className="flex flex-col w-1/2 gap-y-4">
-        {benefits.map(benefits =>
-        <div key={benefits.id} className="flex gap-10">
+      <div className="flex flex-col md:w-1/2 gap-y-4">
+      
+      
+          {benefits.map(benefits =>
+        <div key={benefits.id} className="flex gap-10 ">
           <div className="flex justify-center flex-col items-center gap-4">
             <svg
               width="36"
