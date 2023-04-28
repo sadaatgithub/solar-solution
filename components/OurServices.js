@@ -17,7 +17,7 @@ const OurServices = () => {
         </div>
       </div>
       <div className="flex gap-8 w-full flex-col lg:flex-row">
-        <div className="lg:w-1/2 flex flex-col border md:w-/3 overflow-hidden shadow-xl rounded-md">
+        <div className="xl:w-[45%] flex flex-col border md:w-/3 overflow-hidden shadow-xl rounded-md">
           <div className="max-h-96 overflow-hidden">
             <Image
               src={aboutImage}
@@ -38,12 +38,12 @@ const OurServices = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col lg:w-1/2 gap-8 ">
+        <div className="flex flex-col xl:w-[55%] gap-8 ">
           <div className="flex gap-8  flex-col sm:flex-row lg:flex-col xl:flex-row ">
 
           {/* service two */}
 
-            <div className="border shadow-xl rounded-md p-6 w-full xl:w-1/2 ">
+            <div className="border shadow-xl rounded-md p-6 w-full xl:w-1/2 flex flex-col">
               <svg
                 width="36"
                 height="40"
@@ -60,9 +60,9 @@ const OurServices = () => {
                 />
               </svg>
 
-              <h5 class="pb-2 text-2xl font-bold text-sky-800">HT-LT panels</h5>
+              <h5 className="pb-2 text-2xl font-bold text-sky-800">HT-LT panels</h5>
               <p className="text-gray-500">We offers installation and maintenance services for both LT and HT solar systems</p>
-              <div className="pt-6">
+              <div className="pt-6 mt-auto">
                 <button className="">Read More</button>
               </div>
             </div>
@@ -85,7 +85,7 @@ const OurServices = () => {
                 />
               </svg>
 
-              <h5 class="pb-2 text-2xl font-bold text-sky-800 ">Consultant</h5>
+              <h5 className="pb-2 text-2xl font-bold text-sky-800 ">Consultant</h5>
               <p className="text-gray-500">We provide consulting and design services to assist customers in planning and implementing customized solar energy solutions.</p>
               <div className="pt-6">
                 <button className="">Read More</button>
@@ -95,7 +95,7 @@ const OurServices = () => {
 
         <div className="flex flex-col-reverse h-full border sm:flex-row   rounded-md shadow-xl">
             <div className="flex flex-col justify-center w-full sm:w-1/2 p-6  ">
-            <h5 class="pb-2 text-2xl font-bold text-sky-800">Solar Equipments Supply</h5>
+            <h5 className="pb-2 text-2xl font-bold text-sky-800">Solar Equipments Supply</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div className="pt-6">
                 <button>Read More</button>

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import aboutImage from "../public/solar-hero.jpg"
 const AboutUs = () => {
   return (
-   <Container className="flex gap-20 w-full items-center min-h-screen">
+   <Container className="flex gap-20 w-full  min-h-screen">
     <div className="flex flex-col gap-6 lg:w-1/2 z-10">
         <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-4">
@@ -28,13 +28,13 @@ const AboutUs = () => {
 <button className="border border-orange-500 w-auto self-start px-6 py-3 bg-orange-500 text-white rounded-sm">Know More</button>
 </div>
     </div>
-    <div className="hidden lg:block w-1/2 h-full border rounded-2xl overflow-hidden shadow-2xl shadow-orange-200 z-10">
+    <div className="hidden lg:block w-1/2 h-full border z-10">
         <Image
          src={aboutImage}
          width={640}
          height={480}
          alt="our team"
-         className="w-full h-full object-cover "/>
+         className="w-full h-full object-contain "/>
     </div>
 
    </Container>
