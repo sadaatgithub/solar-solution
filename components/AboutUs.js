@@ -11,8 +11,8 @@ const AboutUs = () => {
             <div className="flex flex-col gap-4">
                 <p className="text-orange-500">About</p>
                 <div className="flex flex-col gap-6">
-                    <h2 className="text-5xl font-bold text-sky-700">We're passionate about bringing clean, affordable solar energy to our community</h2>
-                    <p className="text-lg text-gray-500">Our mission is to make solar energy accessible to everyone. We believe that solar is not only good for the environment, but also for our customers' wallets. By helping homeowners and businesses switch to solar, we're making a positive impact on both the planet and their bottom line.</p>
+                    <h2 className="text-5xl font-bold text-sky-700">We&apos;re passionate about bringing clean, affordable solar energy to our community</h2>
+                    <p className="text-lg text-gray-500">Our mission is to make solar energy accessible to everyone. We believe that solar is not only good for the environment, but also for our customers&apos; wallets. By helping homeowners and businesses switch to solar, we&apos;re making a positive impact on both the planet and their bottom line.</p>
                 </div>
                 
 

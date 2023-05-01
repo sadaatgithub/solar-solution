@@ -46,7 +46,7 @@ const WhyGoForSolar = () => {
       </div>
       <div className="grid-col-1 md:col-span-2  grid  sm:grid-cols-2  md:gap-y-16 gap-12 gap-x-12">
         {benefits.map((benefit) => (
-          <div className="flex flex-col gap-6 sm:col-span-1 [&>svg]:text-4xl [&>svg]:text-orange-400 ">
+          <div key={benefit.id} className="flex flex-col gap-6 sm:col-span-1 [&>svg]:text-4xl [&>svg]:text-orange-400 ">
             {/* <svg
               width="36"
               height="40"
