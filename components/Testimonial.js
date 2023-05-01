@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
+import { FaStar } from 'react-icons/fa';
 const testimonial = [
     {
       id: 1,
@@ -49,8 +50,8 @@ const testimonial = [
 const Testimonial = () => {
   return (
     <Container className="flex flex-col gap-20 items-center justify-center min-h-screen">
-        <div className="flex flex-col gap-6">
-            <h2 className="text-4xl font-bold">Customer Testimonials</h2>
+        <div className="flex flex-col gap-6 items-center">
+            <h2 className="text-5xl font-bold text-gray-600">Customer Testimonials</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
 
@@ -89,11 +90,11 @@ const Testimonial = () => {
           return (
             <SwiperSlide 
               key={data.id}
-              className="w-full flex flex-col p-8  rounded-md bg-gray-100 border border-gray-100"
+              className="w-full h-full flex flex-col p-8  rounded-md bg-gray-50 border border-gray-100"
             >
              
                 <div className="flex flex-col  w-full gap-8 ">
-                  {/* <span className="flex text-yellow-400"><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></span> */}
+                  <span className="flex text-yellow-400"><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></span>
                   <div className="text-center flex gap-2  relative">
                    
 

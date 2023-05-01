@@ -8,15 +8,15 @@ const Quote = () => {
     <Container className="flex flex-col md:flex-row gap-20 min-h-screen bg-white">
         
         <div className="flex flex-col z-10 text-black gap-6 md:w-1/2">
-            <h2 className="text-4xl font-bold">Request A Free Quote</h2>
+            <h2 className="text-4xl font-bold text-gray-700">Request A Free Quote</h2>
             <p className="text-lg text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            <div className="flex flex-col gap-4 text-gray-400">
+            <div className="flex flex-col gap-4 text-gray-500">
                 <p>Email : solar-solution@email.com</p>
                 <p>Mobile : 9898653265</p>
                 <p>Address: 123 Sample St, Sydney NSW 2000 AU</p>
             </div>
         </div>
-            <form action="" className="z-10 md:w-1/2 text-sky-900 flex flex-col gap-6">
+            <form action="" className="z-10 md:w-1/2 text-gray-700 flex flex-col gap-6">
                 <div className="flex flex-col gap-2">
                     <label htmlFor="name">Name</label>
                     <input type="text" name="name" className="border py-2"/>

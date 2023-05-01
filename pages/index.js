@@ -8,12 +8,13 @@ import Testimonial from '@/components/Testimonial'
 import Quote from '@/components/Quote'
 import Footer from '@/components/Footer'
 import WhyGoForSolar from '@/components/WhyGoForSolar'
+import BackToTop from '@/components/BackToTop'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className='max-w-[1440px] mx-auto font-source_sans_pro'>
+    <main className='max-w-[1440px] mx-auto font-source_sans_pro relative'>
     <HeroSection/>
     {/* <Benefits/> */}
     <WhyGoForSolar/>
@@ -22,6 +23,7 @@ export default function Home() {
     <Testimonial/>
     <Quote/>
     <Footer/>
+    <BackToTop/>
     </main>
   )
 }
