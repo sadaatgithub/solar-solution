@@ -1,11 +1,13 @@
 import React from 'react'
+import Logo from './Header/Logo'
+import SocialIcons from './Header/SocialIcons'
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col  gap-20 py-20 px-16 bg-slate-800 text-white">
-            <div className="flex  w-full md:flex-row flex-col gap-6">
-                <div className="w-full flex justify-center md:justify-start">
-                    <h2>LOGO</h2>
+    <footer className="flex flex-col  gap-20 py-20 px-4 md:px-16 bg-slate-800 text-white">
+            <div className="flex  w-full lg:flex-row flex-col gap-6">
+                <div className="w-full grow flex justify-center lg:justify-start">
+                    <Logo/>
                 </div>
 
             <ul className="flex w-full justify-center gap-8">
@@ -13,12 +15,10 @@ const Footer = () => {
             <li>Services</li>
             <li>Contact Us</li>
             </ul>
-            <ul className="flex w-full justify-center md:justify-end gap-8">
-            <li>Fb</li>
-            <li>Insta</li>
-            <li>Youtube</li>
-            </ul>
-            
+        
+            <div className="w-full flex justify-center lg:justify-end">
+            <SocialIcons className=""/>
+            </div>
             </div>
             <div className="flex gap-6 justify-center border-t border-spacing-5 border-gray-600 py-4 text-sm">
                 <p>2023 All rights reserved</p>

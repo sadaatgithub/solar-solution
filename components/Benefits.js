@@ -20,7 +20,7 @@ const Benefits = () => {
           <p className="font-semibold text-orange-500">Benefits</p>
           <h2 className="font-bold text-5xl text-gray-700">Why Go For Solar</h2>
         </div>
-        <div className="h-3/4">
+        <div className="h-3/4  overflow-hidden">
             <Image
               src={aboutImage}
               width={640}
@@ -38,7 +38,7 @@ const Benefits = () => {
       
           {benefits.map(benefits =>
         <div key={benefits.id} className="flex gap-10 ">
-          <div className="flex justify-center flex-col items-center gap-4">
+          <div className="flex justify-center flex-col items-center gap-3">
             <svg
               width="36"
               height="40"
