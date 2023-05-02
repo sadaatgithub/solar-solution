@@ -11,7 +11,9 @@ module.exports = {
     extend: {
       fontFamily:{
         inter:['var(--source-inter)', ...fontFamily.sans],
-        source_sans_pro:['var(--source-ssp)', ...fontFamily.sans]
+        source_sans_pro:['var(--source-ssp)', ...fontFamily.sans],
+        rye:['var(--logo-font)', ...fontFamily.sans],
+        satisfy:['var(--sublogo-font)', ...fontFamily.sans]
 
       },
       backgroundImage: {

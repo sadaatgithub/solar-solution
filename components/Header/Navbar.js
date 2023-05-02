@@ -1,27 +1,27 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {TfiHeadphoneAlt,TfiEmail,TfiLocationPin} from "react-icons/tfi"
-import { FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa"
+import { FaBars,FaTimes} from "react-icons/fa"
 
 import logo from "../../public/solar_logo.png"
 import Image from 'next/image'
 import Logo from './Logo'
 import SocialIcons from './SocialIcons'
 const Navbar = () => {
+  const [burgerMenu,setBurgerMenu] = useState(false)
+  const burgerHandler = () =>{
+    setBurgerMenu(!burgerMenu)
+  }
+  const burgerIcon = burgerMenu? <FaTimes/>:<FaBars/>
 
   return (
     <div className=' fixed md:top-5 md:left-10 md:right-10 z-20 inset-x-0 flex flex-col md:px-10  px-2 border-b-4 border-orange-500  bg-white shadow-xl rounded-sm  mx-auto'>
         {/* Logo */}
 
 
-        <div className="grid grid-cols-6 col-span-full border-b py-3">
+        <div className="grid grid-cols-6 col-span-full border-b py-3 relative">
           <div className="md:col-span-full lg:col-span-2 col-span-full">
             <Logo/>
-            {/* <Image src={logo} alt="" width={55}
-              height={40}/>
-              <div className="flex flex-col">
-            <h1 className="text-2xl font-bold text-orange-400 uppercase">Solar Solution</h1>
-            <p className="text-sm text-gray-500">By Choudhary Engineering</p>
-            </div> */}
+            
             </div>
             <div className="col-span-4 hidden lg:flex  justify-end gap-8 [&>div]:items-center [&>div]:justify-center">
               <div className="flex gap-2">
@@ -50,12 +50,13 @@ const Navbar = () => {
               </div>
 
             </div>
+            <button className="md:hidden absolute right-5 top-1/2 -translate-y-1/2 text-2xl text-orange-500" onClick={() => burgerHandler()}>{burgerIcon}</button>
         </div>
 
 
         {/* Navlink */}
-        <div className="flex justify-between items-center">
-        <ul className='md:flex gap-6 font-semibold uppercase hidden [&>li]:cursor-pointer [&>li]:py-1 text-sky-900 [&>li:hover]:text-orange-500'>
+        <div className={` ${burgerMenu? "flex":"hidden md:flex"}  justify-between md:items-center flex-col md:flex-row p-1 gap-y-8`}>
+        <ul className='flex flex-col md:flex-row gap-4 md:gap-6 font-semibold uppercase  [&>li]:cursor-pointer [&>li]:py-1 text-sky-900 [&>li:hover]:text-orange-500'>
             <li>Home</li>
             <li>About Us</li>
             <li>Our Services</li>
@@ -63,12 +64,7 @@ const Navbar = () => {
             <li>Contact Us</li>
             <li>FAQ</li>
         </ul>
-        {/* <div className="flex gap-6 [&>svg]:bg-orange-400 [&>svg]:p-1 [&>svg]:rounded-sm [&>svg]:cursor-pointer ">
-            <FaInstagram  className="text-2xl text-white"/>
-            <FaFacebookF className="text-2xl text-white"/>
-            <FaTwitter className="text-2xl text-white"/>
-
-        </div> */}
+        
         <SocialIcons/>
         </div>
     </div>
