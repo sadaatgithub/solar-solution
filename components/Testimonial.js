@@ -49,10 +49,10 @@ const testimonial = [
 
 const Testimonial = () => {
   return (
-    <Container className="flex flex-col gap-20 items-center justify-center min-h-screen">
+    <Container className="flex flex-col gap-20 items-center justify-center min-h-screen bg-sky-950">
         <div className="flex flex-col gap-6 items-center">
-            <h2 className="text-5xl font-bold text-gray-600">Customer Testimonials</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h2 className="text-5xl font-bold text-orange-400">Customer Testimonials</h2>
+            <p className="text-gray-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
 
         <Swiper  

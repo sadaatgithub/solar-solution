@@ -27,13 +27,13 @@ const Quote = () => {
                 </div>
                 <div className="flex flex-col gap-2">
                     <label htmlFor="name">Message</label>
-                    <textarea name="" id="" cols="30" rows="6" placeholder="Type your message..." className="p-3 border"></textarea>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Type your message..." className="p-3 border"></textarea>
                 </div>
                 <div className="flex items-center gap-2">
                     <input type="checkbox" name="email" className="border py-2"/>
                     <label htmlFor="email">I accept <a href="#">Terms</a></label>
                 </div>
-                <button className="px-6 py-3 self-start border border-orange-500 bg-orange-500 text-white">Get A Free Quote</button>
+                <button className="w-full rounded-sm shadow-md px-6 py-3 self-start border border-orange-400 bg-orange-400 text-white">Get A Free Quote</button>
             </form>
     </Container>
   )

@@ -7,8 +7,8 @@ import {FiPhoneCall} from "react-icons/fi"
 
 const AboutUs = () => {
   return (
-    <Container className="flex flex-col md:flex-row gap-10 lg:gap-20 w-full  min-h-screen">
-      <div className="flex flex-col gap-6 md:w-1/2 z-10">
+    <Container className="flex flex-col lg:flex-row gap-10 lg:gap-20 w-full  min-h-screen">
+      <div className="flex flex-col gap-6 lg:w-1/2 z-10">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <p className="text-orange-500 uppercase font-bold">About</p>
@@ -43,8 +43,8 @@ const AboutUs = () => {
             </ul>
           </div>
         </div>
-        <div className="pt-4 flex gap-10 items-center">
-          <button className="border border-orange-500 w-auto self-start px-6 py-3 bg-orange-500 text-white rounded-sm hover:bg-sky-800 hover:border-sky-800">
+        <div className="pt-4 flex gap-10 items-center flex-col md:flex-row flex-wrap">
+          <button className="border border-orange-500 md:max-w-[200px] w-full self-start px-6 py-3 bg-orange-500 text-white rounded-sm hover:bg-sky-800 hover:border-sky-800">
             Know More
           </button>
           <div className="flex gap-4 items-center">
@@ -56,7 +56,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="md:w-1/2  z-10 flex relative after:absolute after:content-[''] after:top-16 after:-bottom-0 md:after:-right-10 after:left-1/2 after:-z-10 after:bg-orange-300/20">
+      <div className="lg:w-1/2  z-10 flex relative after:absolute after:content-[''] after:top-16 after:-bottom-0 md:after:-right-10 after:left-1/2 after:-z-10 after:bg-orange-300/20">
         <Image
           src={aboutImage}
           width={640}
