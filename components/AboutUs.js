@@ -30,15 +30,15 @@ const AboutUs = () => {
             <ul className="flex flex-col gap-4 text-gray-500 [&>li]:flex [&>li]:gap-2 [&>li]:items-center ">
               <li>
                 <FaChevronCircleRight className="text-orange-400" />
-                Lorem ipsum dolor sit amet.
+                Flexible Cost-Effective Solutions
               </li>
               <li>
                 <FaChevronCircleRight className="text-orange-400" />
-                Lorem ipsum dolor sit amet.
+                Produce Innovative Design Futuristic Blades
               </li>
               <li>
                 <FaChevronCircleRight className="text-orange-400" />
-                Lorem ipsum dolor sit amet.
+                We Tailored For Specific Client’s Needs
               </li>
             </ul>
           </div>

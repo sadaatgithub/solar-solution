@@ -34,7 +34,7 @@ const WhyGoForSolar = () => {
     <Container className="min-h-screen grid grid-cols-1 lg:grid-cols-3 gap-20">
       <div className="flex flex-col gap-6 col-span-full md:col-span-1">
         <p className="font-semibold text-orange-500">BENEFITS</p>
-        <h2 class="text-5xl font-bold text-gray-700">Why Go For Solar</h2>
+        <h2 className="text-5xl font-bold text-gray-700">Why Go For Solar</h2>
         <p className="text-gray-500">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quas
           excepturi, non aliquid aliquam perspiciatis commodi ullam et qui

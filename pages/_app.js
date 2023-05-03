@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
-// import {  Source_Sans_Pro } from "@next/font/google";
 import { Inter,Source_Sans_Pro,Rye,Satisfy } from 'next/font/google'
 import Layout from "@/components/Layout/Layout";
+
 
 const sourceSansPro = Source_Sans_Pro({
   weight: ["200", "300", "400", "600", "700"],
@@ -10,6 +10,8 @@ const sourceSansPro = Source_Sans_Pro({
 const rye = Rye({weight:['400'],subsets:['latin']})
 const inter = Inter({ subsets: ['latin'] })
 const satisfy = Satisfy({weight:['400'],subsets:['latin']})
+
+
 export default function App({ Component, pageProps }) {
   return (
     <>

@@ -1,0 +1,63 @@
+{
+    "navigation":[
+        {
+            "title":"Home",
+            "href":"/"
+        },
+        {
+            "title":"About Us",
+            "href":"/about"
+        },
+        {
+            "title":"Services",
+            "href":"/services"
+        },
+        {
+            "title":"Gallery",
+            "href":"/gallery"
+        },
+        {
+            "title":"Contact",
+            "href":"/contact"
+        },
+        {
+            "title":"Faq",
+            "href":"/faq"
+        }
+    ],
+    "hero":{
+        "title":"POWER YOUR HOME WITH CLEAN, AFFORDABLE SOLAR ENERGY",
+        "subtitle":"Experience the power of the sun and reduce your energy costs with our expert solar solutions. Join the clean energy revolution today",
+        "cta":[
+            {
+                "title":"Get Free Quote",
+                "href":"/quote"
+            },
+            {
+                "title":"Know More",
+                "href":"/about"
+            }
+        ]
+    },
+    "testimonials":[
+        {
+            "name":"Rafael",
+            "designation":"Homeowner",
+            "image":"",
+            "text":"I am a homeowner and I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar"
+
+        },
+        {
+            "name":"Sarah",
+            "designation":"Homeowner",
+            "image":"",
+            "text":"I was skeptical about switching to solar, but Solar Solutions made it easy. They were knowledgeable, professional, and walked us through every step of the process. Now our energy bills are lower than ever before!"
+        },
+        {
+            "name":"John",
+            "designation":"Businessmen",
+            "image":"",
+            "text":"We couldn't be happier with our solar installation from Solar Solutions. They customized the system to our energy needs, and their ongoing maintenance services ensure our panels are always performing at their best. Highly recommend!"
+        }
+    ]
+}

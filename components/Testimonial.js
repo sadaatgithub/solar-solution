@@ -65,7 +65,7 @@ const Testimonial = () => {
           delay: 5500,
           disableOnInteraction: false,
         }}
-        loopFillGroupWithBlank={false}
+        loopfillgroupwithblank={false}
         pagination={{
           clickable: true,
         }}
