@@ -4,7 +4,7 @@ import React from 'react'
 const Button = ({text,className}) => {
   return (
     <button className={`${className || ""} px-6 py-3 relative  rounded-sm btn_overlay hover:text-white`}>
-      <Link href="/contact">{text}</Link>
+      <Link href="/contact-us">{text}</Link>
         </button>
   )
 }
