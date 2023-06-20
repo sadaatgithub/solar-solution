@@ -161,7 +161,7 @@ const Index = () => {
     const data = services.filter(service => service.slug === query.slug)
 return (
     <>
-    {/* <PagePathBanner/> */}
+    <PagePathBanner/>
     {query.slug != "solar-material-supply"? 
     <Container className="min-h-screen ">{data?.map(service => (
         <div key={service.id} className="flex flex-col gap-20 mx-auto ">
