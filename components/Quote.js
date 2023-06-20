@@ -1,40 +1,21 @@
 import React from 'react'
 import Container from './Container'
+import AnimateComponent from './animate/AnimateComponent'
+import ContactForm from './Contact/ContactForm'
+import ContactFormDetails from './Contact/ContactFormDetails'
+
 
 const Quote = () => {
 
     // bg-[url('../public/solarimg.jpg')] bg-cover bg-no-repeat relative after:content-[''] after:absolute after:bg-black/80  after:inset-0
   return (
-    <Container className="flex flex-col md:flex-row gap-20 min-h-screen bg-white">
-        
-        <div className="flex flex-col z-10 text-black gap-6 md:w-1/2">
-            <h2 className="text-4xl font-bold text-gray-700">Request A Free Quote</h2>
-            <p className="text-lg text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            <div className="flex flex-col gap-4 text-gray-500">
-                <p>Email : solar-solution@email.com</p>
-                <p>Mobile : 9898653265</p>
-                <p>Address: 123 Sample St, Sydney NSW 2000 AU</p>
-            </div>
-        </div>
-            <form action="" className="z-10 md:w-1/2 text-gray-700 flex flex-col gap-6">
-                <div className="flex flex-col gap-2">
-                    <label htmlFor="name">Name</label>
-                    <input type="text" name="name" className="border py-2"/>
-                </div>
-                <div className="flex flex-col gap-2">
-                    <label htmlFor="email">Email</label>
-                    <input type="text" name="email" className="border py-2"/>
-                </div>
-                <div className="flex flex-col gap-2">
-                    <label htmlFor="name">Message</label>
-                    <textarea name="" id="" cols="30" rows="5" placeholder="Type your message..." className="p-3 border"></textarea>
-                </div>
-                <div className="flex items-center gap-2">
-                    <input type="checkbox" name="email" className="border py-2"/>
-                    <label htmlFor="email">I accept <a href="#">Terms</a></label>
-                </div>
-                <button className="w-full rounded-sm shadow-md px-6 py-3 self-start border border-orange-400 bg-orange-400 text-white">Get A Free Quote</button>
-            </form>
+    <Container className="flex flex-col md:flex-row gap-20 min-h-screen bg-white w-full">
+      <AnimateComponent className="w-full" type="right">
+      <ContactFormDetails title="Request A Free Quote"/>
+      </AnimateComponent>
+      <AnimateComponent className="w-full" type="left">
+      <ContactForm title="Get A Free Quote" className="w-full"/>
+      </AnimateComponent>
     </Container>
   )
 }

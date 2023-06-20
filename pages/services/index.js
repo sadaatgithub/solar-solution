@@ -3,7 +3,7 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <Container>
+    <Container className="min-h-screen">
     <div>Services</div>
     </Container>
   )

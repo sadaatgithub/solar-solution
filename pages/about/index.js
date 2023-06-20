@@ -1,11 +1,17 @@
-import Container from '@/components/Container'
+import AboutUs from '@/components/AboutUs'
+import Testimonial from '@/components/Testimonial'
+import AboutStat from '@/components/aboutus/AboutStat'
+import PagePathBanner from '@/components/common/PagePathBanner'
 import React from 'react'
 
 const About = () => {
   return (
-    <Container>
-    <div>About</div>
-    </Container>
+    <>
+    <PagePathBanner/>
+    <AboutUs/>
+    <AboutStat/>
+    <Testimonial/>
+    </>
   )
 }
 
