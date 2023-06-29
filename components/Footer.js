@@ -6,7 +6,7 @@ import Link from 'next/link'
 const Footer = () => {
   const today = new Date()
   return (
-    <footer className="flex flex-col  gap-20 py-20 px-4 md:px-16 bg-slate-800 text-white">
+    <footer className="flex flex-col  gap-20 py-20 px-4 md:px-16 bg-slate-800 text-white ">
             <div className="flex  w-full lg:flex-row flex-col gap-6">
                 <div className="w-full grow flex flex-col gap-4 justify-center lg:justify-start">
                     <Logo/>

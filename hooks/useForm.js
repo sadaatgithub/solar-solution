@@ -19,6 +19,7 @@ const useForm = (initialState, onSubmit) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setIsSubmitting(true)
+    console.log(values)
     try {
      await submitContactForm(values)
       setValues(initialState);

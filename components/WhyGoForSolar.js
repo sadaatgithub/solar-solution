@@ -44,7 +44,7 @@ const WhyGoForSolar = () => {
       <TopSubHeading text="Benefits"/>
       <div className="relative">
      <DivTitle text="Why Go For Solar"/>
-     <div className="hidden lg:block absolute left-[90%] top-0 bg-[url('../public/arrow.svg')] w-24 h-24 bg-no-repeat bg-contain "></div>
+     <div className="hidden lg:block absolute left-[80%] top-0 bg-[url('../public/arrow.svg')] w-36 h-36 bg-no-repeat bg-contain "></div>
      </div>
       <m.p variants={textVariant(0.1)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="text-gray-500  text-center lg:text-start max-w-2xl">
         Switching to solar power is an effective way to reduce reliance on
@@ -54,8 +54,8 @@ const WhyGoForSolar = () => {
         of the sun, you can not only reduce your carbon footprint but also
         improve your financial bottom line.
       </m.p>
-      <m.button variants={textVariant(0.2)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="w-full md:max-w-[250px]  mt-4  px-6 py-3 bg-orange-500 text-white  rounded-sm 
-      relative btn_overlay"><Link href="/contact">
+      <m.button variants={textVariant(0.2)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="w-full md:max-w-[250px]  mt-4  px-6 py-3 bg-green-500 text-white  rounded-sm 
+      relative btn_overlay shadow-lg"><Link href="/contact">
       <span className="z-10">Get Free Consultation</span></Link>
       </m.button>
     </div>
@@ -64,10 +64,10 @@ const WhyGoForSolar = () => {
         <m.div variants={textVariant(idx*0.2)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}}  key={benefit.id} className=" relative">
           <div
             className="flex flex-col gap-6 sm:col-span-1 [&>svg]:text-4xl
-         [&>svg]:text-orange-400 p-2 z-[10] "
+         [&>svg]:text-green-400 p-2 z-[10] [&>svg]:drop-shadow-md"
           >
             {benefit.icon}
-            <h6 className="text-xl font-bold  text-sky-800 ">
+            <h6 className="text-xl font-bold  text-gray-800 ">
               {benefit.title}
             </h6>
             <p className="text-gray-500">

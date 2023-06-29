@@ -40,21 +40,21 @@ const NavBar = () => {
         </div>
         <div className="col-span-4 hidden lg:flex  justify-end gap-8 [&>div]:items-center [&>div]:justify-center">
           <div className="flex gap-3">
-            <TfiHeadphoneAlt size={35} color={"orange"} />
+            <TfiHeadphoneAlt size={35} className="text-green-400" />
             <div className="flex flex-col">
               <p className="text-gray-300 leading-4 text-sm">Call Us</p>
               <p>8484939335</p>
             </div>
           </div>
           <div className="flex gap-3">
-            <TfiEmail size={35} color={"orange"} />
+            <TfiEmail size={35} className="text-green-400" />
             <div className="flex flex-col">
               <p className="text-gray-300 leading-4 text-sm">Email Us</p>
               <p>solutionsolar42@gmail.com</p>
             </div>
           </div>
           <div className="flex gap-3">
-            <TfiLocationPin size={35} color={"orange"} />
+            <TfiLocationPin size={35} className="text-green-400" />
             <div className="flex flex-col">
               <p className="text-gray-300 leading-4 text-sm">Address</p>
               <p>Bhavani Nagar, Paradi,Nagpur</p>
@@ -62,7 +62,7 @@ const NavBar = () => {
           </div>
         </div>
         <button
-          className="md:hidden absolute right-5 top-1/2 -translate-y-1/2 text-2xl text-orange-500 z-10 p-4"
+          className="md:hidden absolute right-2 top-1/2 -translate-y-1/2 text-2xl text-green-600 z-10 p-4"
           onClick={() => handleBurgerMenu()}
         >
           {burgerIcon}
@@ -70,7 +70,7 @@ const NavBar = () => {
       </div>
 
       {/* Navlink */}
-      <div className={`${burgerMenu? "[grid-template-rows:1fr]":"[grid-template-rows:0fr]"} grid  md:flex  transition-[grid-template-rows] duration-500 w-full`}>
+      <div className={`${burgerMenu? "[grid-template-rows:1fr]":"[grid-template-rows:0fr]"} grid  md:flex  transition-[grid-template-rows] duration-400 w-full`}>
 
       <div
         className={` flex flex-col md:flex-row justify-between md:items-center gap-y-6 w-full overflow-hidden md:overflow-visible`}

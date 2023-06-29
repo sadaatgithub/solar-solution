@@ -4,7 +4,9 @@
 
 
 button.active{
-    @apply border-b-2 border-teal-400
+    @apply border-b-2 border-teal-400;
+    /* color: #30c250; */
+    
   }
   .btn_overlay {
     @apply after:absolute after:content-[''] after:inset-0 after:bg-sky-950 after:-z-[1] z-10 after:scale-x-0 after:origin-right after:hover:origin-left after:hover:scale-x-100 after:transition-transform after:duration-500 after:ease-ease-btn ;

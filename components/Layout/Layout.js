@@ -5,10 +5,10 @@ import Footer from "../Footer";
 
 export default function Layout({ children }) {
   const router = useRouter();
-  console.log(router.route)
 
   return (
     <>
+    <Navbar/>
       <AnimatePresence mode="wait">
         <motion.div
           key={router.route}
@@ -35,11 +35,10 @@ export default function Layout({ children }) {
           }}
           className="max-w-[1440px] relative mx-auto"
         >
-          <Navbar/>
           <main className="bg-none">{children}</main>
-          <Footer />
         </motion.div>
       </AnimatePresence>
+          <Footer />
     </>
   );
 }

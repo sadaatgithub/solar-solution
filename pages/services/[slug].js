@@ -166,15 +166,15 @@ return (
     <Container className="min-h-screen ">{data?.map(service => (
         <div key={service.id} className="flex flex-col gap-20 mx-auto ">
             <div className="flex flex-col gap-6 text-center">
-              <DivTitle text={service.title} className="!text-center"/>
-            <m.p variants={textVariant(0.1)} initial="hidden"  whileInView="show" viewport={{once:true, amount:0.3}} className="text-xl text-gray-500">{service.subheading}</m.p>
+              <DivTitle text={service.title} className="!text-center [text-wrap:'balanced']"/>
+            <m.p variants={textVariant(0.1)} initial="hidden"  whileInView="show" viewport={{once:true, amount:0.3}} className="text-xl text-gray-500 [text-wrap:'balanced'] w-2/3 text-center self-center">{service.subheading}</m.p>
             </div>
             {service.content.map(content =>{
               const isEven = content.id % 2
               return (
                 <div key={content.id}  className={`${ isEven? "md:flex-row-reverse":""} flex items-center flex-col-reverse md:flex-row gap-8  mx-auto overflow-hidden`}>
                   <m.div variants={fadeIn(isEven?'left':'right','spring',0.1,0.5)} initial="hidden"  whileInView="show" viewport={{once:true, amount:0.3}} className="flex flex-col md:w-1/2 gap-4">
-                <h3 className="text-2xl font-bold text-gray-700"><span className="text-5xl text-orange-400 mr-3">{content.id}</span>{content.heading}</h3>
+                <h3 className="text-2xl font-bold text-gray-700"><span className="text-5xl text-green-400 mr-3">{content.id}</span>{content.heading}</h3>
                 <p className="text-gray-500">{content.desc}</p>
                 </m.div>
                 <m.div variants={fadeIn(isEven? 'right':'left','spring',0.1,0.5)} initial="hidden"  whileInView="show" viewport={{once:true, amount:0.3}} className="md:w-1/2">
@@ -186,11 +186,7 @@ return (
             <div className="">
              <p className="text-lg text-gray-600">{service.footerHeading}</p>
             </div>
-            <div className="bg-orange-500 flex justify-around items-center py-16 gap-12 rounded-lg shadow-lg flex-col md:flex-row">
-              <h2 className="md:text-5xl text-3xl  font-bold text-white capitalize">Start your saving now...!</h2>
-              <Button text="Get in Touch" className="bg-white cursor-pointer"/>
-              
-            </div>
+           
             <div className="flex flex-col">
             <span className="text-sm text-gray-500 italic underline"><a href="https://storyset.com/business">Business illustrations by Storyset</a></span>
             <span className="text-sm text-gray-500 italic underline"><a href="https://storyset.com/worker">Worker illustrations by Storyset</a></span>
@@ -198,7 +194,12 @@ return (
         </div>
       ))}
       </Container>: <MaterialSupply/>}
-
+      <div className="bg-green-600  flex justify-around items-center py-16 gap-12 shadow-2xl flex-col md:flex-row">
+              <h2 className="md:text-5xl text-3xl  font-bold text-white capitalize">Start your saving now...!</h2>
+              <Button text="Get in Touch" className="bg-white cursor-pointer"/>
+              
+            </div>
+            
 
     </>
   )

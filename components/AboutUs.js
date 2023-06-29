@@ -33,15 +33,15 @@ const AboutUs = () => {
           <m.div variants={container} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}}  className="">
             <ul className="flex flex-col gap-4 text-gray-800 [&>li]:flex [&>li]:gap-2 [&>li]:items-center ">
               <m.li variants={textVariant(0.1)}>
-                <FaChevronCircleRight className="text-orange-400" />
+                <FaChevronCircleRight className="text-green-400" />
                 Flexible Cost-Effective Solutions
               </m.li>
               <m.li variants={textVariant(0.2)}>
-                <FaChevronCircleRight className="text-orange-400" />
+                <FaChevronCircleRight className="text-green-400" />
                 Produce Innovative Design Futuristic Blades
               </m.li>
               <m.li variants={textVariant(0.3)}>
-                <FaChevronCircleRight className="text-orange-400" />
+                <FaChevronCircleRight className="text-green-400" />
                 We Tailored For Specific Client’s Needs
               </m.li>
             </ul>
@@ -49,12 +49,12 @@ const AboutUs = () => {
         </div>
         <div className="pt-4 flex gap-10 items-center flex-col sm:flex-row flex-wrap">
           <Link href="/about" className="w-full md:max-w-[200px] sm:max-w-1/2">
-          <m.button variants={textVariant(0.5)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="w-full self-start px-6 py-3 bg-orange-500 text-white rounded-sm relative btn_overlay">
+          <m.button variants={textVariant(0.5)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="w-full self-start px-6 py-3 bg-green-500 text-white rounded-sm relative btn_overlay">
             Know More
           </m.button>
           </Link>
           <m.div variants={textVariant(0.5)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="flex gap-4 items-center">
-            <FiPhoneCall  className="bg-orange-50 p-4 rounded-full font-thin w-12 h-12 text-orange-400"/>
+            <FiPhoneCall  className="bg-green-50 p-4 rounded-full font-thin w-12 h-12 text-green-400"/>
             <ul className="flex flex-col">
             <li className="text-gray-400">Have any questions?</li>
             <li className="font-bold"><a href="tel:8484939335">(+91) 8484939335</a></li>
@@ -63,7 +63,7 @@ const AboutUs = () => {
           </m.div>
         </div>
       </div>
-      <m.div variants={textVariant(0.5)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="md:w-1/2 md:-translate-x-5 z-10 flex relative after:absolute after:content-[''] after:top-16 after:-bottom-2 md:after:-right-10 after:left-1/2 after:-z-10 after:bg-orange-300/20 ">
+      <m.div variants={textVariant(0.5)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="md:w-1/2 md:-translate-x-5 z-10 flex relative after:absolute after:content-[''] after:top-16 after:-bottom-2 md:after:-right-10 after:left-1/2 after:-z-10 after:bg-green-300/20 ">
         <Image
           src={aboutImage}
           width={960}
