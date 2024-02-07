@@ -1,9 +1,14 @@
-[{
+[
+  {
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
       "package_name": "com.briquetech.ott",
-      "sha256_cert_fingerprints":
-      ["fa:c6:17:45:dc:09:03:78:6f:b9:ed:e6:2a:96:2b:39:9f:73:48:f0:bb:6f:89:9b:83:32:66:75:91:03:3b:9c"]
+      "sha256_cert_fingerprints": [
+        "fa:c6:17:45:dc:09:03:78:6f:b9:ed:e6:2a:96:2b:39:9f:73:48:f0:bb:6f:89:9b:83:32:66:75:91:03:3b:9c",
+        "55:BF:78:38:E2:A0:8E:05:1B:95:0C:E4:00:54:B1:B6:C6:D2:AF:D9:39:DA:2E:A8:AB:14:C4:C4:A0:E7:C7:26",
+        "44:2F:93:92:4E:A4:82:09:6F:8E:C6:40:01:9D:33:D2:47:23:68:3C:FD:B2:9F:E5:9E:F3:BD:DC:D4:DC:9D:76"
+      ]
     }
-  }]
+  }
+]
