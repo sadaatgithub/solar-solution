@@ -8,7 +8,7 @@ export default function Layout({ children }) {
 
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <AnimatePresence mode="wait">
         <motion.div
           key={router.route}
@@ -38,7 +38,7 @@ export default function Layout({ children }) {
           <main className="bg-none">{children}</main>
         </motion.div>
       </AnimatePresence>
-          <Footer />
+      <Footer />
     </>
   );
 }
